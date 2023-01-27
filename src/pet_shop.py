@@ -9,13 +9,30 @@ def get_total_cash(total_cash):
 def add_or_remove_cash(total_cash, cash):
     total_cash["admin"]["total_cash"] += cash
 
-
-
-#function name? - add_or_remove_cash 
-# parameters? - two parameters, - one dictionary, one number
-# what does function need to do? - add number to existing dictionary entry
-# what does function need to return? - 
-
 def get_pets_sold(list):
     return (list ["admin"]["pets_sold"])
+
+
+def increase_pets_sold(library, number):
+    library["admin"]["pets_sold"] += number
+
+def get_stock_count (library):
+    return len(library["pets"])
+
+
+#function name? - get pets by breed
+# parameters? - 2 - the library, the breed type
+# what does function need to do? - search the 'breed' key:value for each entry in 'pets' for a specific string
+#                                  
+# what does function need to return? - return the number of matches 
+
+
+def get_pets_by_breed(library, breed_type):
+    number_of_matches = []
+    for breed in library["pets"]:
+        if breed ["breed"] == breed_type:
+            number_of_matches.append(breed["breed"])
+    return number_of_matches
+
+    
 
