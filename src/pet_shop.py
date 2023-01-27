@@ -15,3 +15,7 @@ def add_or_remove_cash(total_cash, cash):
 # parameters? - two parameters, - one dictionary, one number
 # what does function need to do? - add number to existing dictionary entry
 # what does function need to return? - 
+
+def get_pets_sold(list):
+    return (list ["admin"]["pets_sold"])
+

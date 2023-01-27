@@ -85,7 +85,7 @@ class TestPetShop(unittest.TestCase):
         self.assertEqual(1000, sum)
 
    # @unittest.skip("delete this line to run the test")
-    def test_add_or_remove_cash__add(self):
+    def test_add_or_remove_cash__add(self):  #note double underscore - often used if same function with two different outcomes
         add_or_remove_cash(self.cc_pet_shop,10)    #doesnt necessarily need to return something 
         cash = get_total_cash(self.cc_pet_shop)
         self.assertEqual(1010, cash)
@@ -96,7 +96,7 @@ class TestPetShop(unittest.TestCase):
         cash = get_total_cash(self.cc_pet_shop)
         self.assertEqual(990, cash)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_pets_sold(self):
         sold = get_pets_sold(self.cc_pet_shop)
         self.assertEqual(0, sold)
